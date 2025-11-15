@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title> Welcome</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="description" content="The All in One Accounting Software">
+    <meta name="author" content="">
+    <!-- CSRF Token -->
+    <link rel="icon" href="img/icon.png" type="image/png">
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/color_skins.css">}}">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="theme-orange">
+
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="m-t-30"><img src="{{ asset('assets/images/loader-5.gif') }}" width="48" height="48" alt="DWASAL"></div>
+            <p>Please wait...</p>        
+        </div>
+    </div>
+    <!-- Overlay For Sidebars -->
+
+    <div id="wrapper">
+        
+        <nav class="navbar navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a href="{{ url('home') }}">DWASAL</a>
+                    <!-- <a href="{{ url('/home')}}"><img src="{{ asset('assets/images/logo.png') }}" alt="DWASAL" class="img-responsive logo" style="width: 150px; height: 50px;"></a>                 -->
+                </div>
+                
+                <div class="navbar-right">
+                    
+                </div>
+
+                <div class="navbar-btn">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                        <i class="lnr lnr-menu fa fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <div id="rightbar" class="rightbar">
+            <div class="sidebar-scroll">            
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs-new">
+                    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#setting"><i class="icon-settings"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#question"><i class="icon-question"></i></a></li>                
+                </ul>
+                    
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane animated fadeIn active" id="setting">
+                        <h6>Choose Skin</h6>
+                        <ul class="choose-skin list-unstyled">
+                            <li data-theme="purple">
+                                <div class="purple"></div>
+                                <span>Purple</span>
+                            </li>                   
+                            <li data-theme="blue">
+                                <div class="blue"></div>
+                                <span>Blue</span>
+                            </li>
+                            <li data-theme="cyan">
+                                <div class="cyan"></div>
+                                <span>Cyan</span>
+                            </li>
+                            <li data-theme="green">
+                                <div class="green"></div>
+                                <span>Green</span>
+                            </li>
+                            <li data-theme="orange" class="active">
+                                <div class="orange"></div>
+                                <span>Orange</span>
+                            </li>
+                            <li data-theme="blush">
+                                <div class="blush"></div>
+                                <span>Blush</span>
+                            </li>
+                        </ul>
+                        <hr>
+                    </div>
+                    <div class="tab-pane animated fadeIn" id="question">
+                        <form>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" ><i class="icon-magnifier"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Search...">
+                            </div>
+                        </form>
+                        <ul class="list-unstyled question">
+                            <li class="menu-heading">HOW-TO</li>
+                            <li><a href="javascript:void(0);">How to Add New User</a></li>
+                            <li><a href="javascript:void(0);">Boost Your Sales</a></li>
+                            <li class="menu-heading">ACCOUNT</li>
+                            <li><a href="javascript:void(0);">Add New Business</a></li>
+                            <li><a href="javascript:void(0);">Change Password?</a></li>
+                            <li><a href="javascript:void(0);">Privacy &amp; Policy</a></li>
+                            <li class="menu-heading">BILLING</li>
+                            <li><a href="javascript:void(0);">Payment info</a></li>                       
+                            <li class="menu-button m-t-30">
+                                <a href="javascript:void(0);" class="btn btn-primary"><i class="icon-question"></i> Need Help?</a>
+                            </li>
+                        </ul>
+                    </div>                
+                </div>          
+            </div>
+        </div>
+
+        <div id="main-content">
+            <div class="container">
+                <div class="block-header pt-0">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <h2><a href="javascript:void(0);" class="btn btn-xs btn-link btn-toggle-fullwidth"><i class="fa fa-arrow-left"></i></a> Welcome to Dwasal User Manual!</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row clealfix">
+                    <div class="col-md-3">
+                        <a href="{{ url('sales-dash') }}">
+                            <div class="card">
+                                <div class="body text-center">
+                                    <h2><i class="fa fa-calculator"></i></h2>
+                                    <h6 class="text-primary">Sales Management</h6>
+                                    <small>Quotations, Sales Orders, Proforma Invoices, Invoices, Delivery Nots, Customer Accounts, Sales Returns</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="product.html">
+                            <div class="card">
+                                <div class="body text-center">
+                                    <h2><i class="fa fa-list-alt"></i></h2>
+                                    <h6 class="text-primary">Products & Services </h6>
+                                    <small>Product List, Purchase Orders, Stock Transfers Orders (STO), Supplier Accounts, Stock Corrections, Services & Devices</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="{{ url('sand-prod-dash') }}">
+                            <div class="card">
+                                <div class="body text-center">
+                                    <h2><i class="fa fa-building-o"></i></h2>
+                                    <h6 class="text-primary">Washed Sand Production</h6>
+                                    <small>Raw Material Sourcings, Production Records, Quality Tests, Washing Plants, Washing Equipments</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="{{ url('settings') }}">
+                            <div class="card">
+                                <div class="body text-center">
+                                    <h2><i class="fa fa-cog"></i></h2>
+                                    <h6 class="text-primary"> Account Settings</h6>
+                                    <small>General Settings, User Profile, Companies, Branches, Users & Roles, Delivery Settings, Invoice Settings, Recyclebin</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="{{ url('accounting-dash') }}">
+                            <div class="card">
+                                <div class="body text-center">
+                                    <h2><i class="fa fa-money"></i></h2>
+                                    <h6 class="text-primary"> Accounting & Finance</h6>
+                                    <small>Payment Accounts, Petty Cash Requests, Expenses, Cash Flows, Chart Of Accounts, Assets & Depreciations</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="{{ url('hr-dash') }}">
+                            <div class="card">
+                                <div class="body text-center">
+                                    <h2><i class="fa fa-group"></i></h2>
+                                    <h6 class="text-primary"> HR & Payroll</h6>
+                                    <small>Employees, Departments, Attendances, Leave Requests, Events, Employee Loans, Payrolls & Payroll Deductions</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="{{ url('prod-dash') }}">
+                            <div class="card">
+                                <div class="body text-center">
+                                    <h2><i class="fa fa-industry"></i></h2>
+                                    <h6 class="text-primary"> Other Production</h6>
+                                    <small>Raw Materials, Packaging Materials, Manufacturing Overheads Costs, Labour Costs, Production Records, etc.</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="{{ url('reports') }}">
+                            <div class="card">
+                                <div class="body text-center">
+                                    <h2><i class="fa fa-bar-chart-o"></i></h2>
+                                    <h6 class="text-primary"> Reporting</h6>
+                                    <small>Sales Summary Reports, Inventory Reports, Expense Reports, Management Reports, Finacial Statements, etc.</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="bundles/libscripts.bundle.js"></script>    
+    <script src="bundles/vendorscripts.bundle.js"></script>
+    <script src="bundles/mainscripts.bundle.js"></script>
+</body>
+</html>
